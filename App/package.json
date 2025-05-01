@@ -1,0 +1,14 @@
+{
+  "name": "File Droping",
+  "version": "1.0.0",
+  "main": "main.js",
+  "projductName": "File Droping",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
