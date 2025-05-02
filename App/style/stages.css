@@ -6,3 +6,10 @@
     transform: translate(-50%, -50%);
     flex-direction: column;
 }
+
+.room-create-join-stage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}

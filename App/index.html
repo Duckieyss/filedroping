@@ -2,31 +2,38 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/root.css">
     <link rel="stylesheet" href="style/fonts.css">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/stages.css">
     <link rel="stylesheet" href="style/error.css">
 </head>
 
 <body>
-    <div class="error-box">
-        
+    <div class="error-box"></div>
+
+    <div class="stages-container">
+        <a class="cta-btn stage-back-btn"><button>< Back</button></a>
+        <div class="name-selection-stage stage">
+            <input class="name-input" placeholder="Name" type="text">
+            <a class="cta-btn"><button class="confirm-name">Continue</button></a>
+        </div>
+        <div style="display: none;" class="room-create-join-stage stage">
+            <a class="cta-btn"><button class="create-room-btn">Create a room</button></a>
+            <a class="cta-btn"><button>Join a room</button></a>
+            <a class="cta-btn"><button class="change-name">Change name</button></a>
+        </div>
+        <div style="display: none;" class="create-room-stage stage">
+            <input class="room-name-input" placeholder="Room name" type="text">
+            <a class="cta-btn"><button class="create-group-btn">Create</button></a>
+        </div>
     </div>
 
-    <div class="name-selection-stage stage">
-        <input class="name-input" placeholder="Name" type="text">
-        <a class="cta-btn"><button class="confirm-name">Continue</button></a>
-    </div>
-    <div style="display: none;" class="room-create-join-stage stage">
-        <a class="cta-btn"><button>Create a room</button></a>
-        <a class="cta-btn"><button>Join a room</button></a>
-        <a class="cta-btn"><button class="change-name">Change name</button></a>
-    </div>
-
-    <script type="module" src="./scripts/stageinit.js"></script>
-    <script type="module" src="./scripts/stageswitch.js"></script>
     <script type="module" src="./scripts/errornotification.js"></script>
+    <script type="module" src="./scripts/userdetails.js"></script>
+    <script type="module" src="./scripts/createroom.js"></script>
+    <script type="module" src="./scripts/groupmanager.js"></script>
 </body>
 
 </html>
